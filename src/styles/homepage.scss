@@ -1,0 +1,101 @@
+@use "./color.scss";
+
+.homepage {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  .search-sec {
+    margin-bottom: 3rem;
+    .search-field {
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-inline: 2rem;
+      border-radius: 0.25rem;
+      .search-input {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .filter {
+      width: 100%;
+      height: 3.5rem;
+      .filter-dropdown {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  .content{
+    text-align: left;
+  }
+
+  .pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+.home-light {
+  background-color: color.$Light-mode-bg;
+  .search-sec {
+    .search-field {
+      background-color: color.$White;
+
+      svg {
+        fill: color.$Light-mode-input;
+      }
+      input::placeholder {
+        color: color.$Light-mode-input;
+        opacity: 50%;
+      }
+      input[type=text]{
+        color: color.$Light-mode-input;
+      }
+    }
+    .filter-dropdown {
+      color: color.$Light-mode-input;
+      background-color: color.$White;
+    }
+  }
+
+  .country-card{
+    color: color.$Light-mode-text;
+  }
+}
+
+.home-dark {
+  background-color: color.$Dark-mode-bg;
+  .search-sec {
+    .search-field {
+      background-color: color.$Dark-mode-element;
+      svg {
+        fill: color.$White;
+      }
+      input::placeholder {
+        color: color.$White;
+        opacity: 50%;
+      }
+      input[type=text]{
+        color: color.$White;
+      }
+    }
+    .filter-dropdown {
+      color: color.$White;
+      background-color: color.$Dark-mode-element;
+    }
+  }
+  .country-card{
+    color: color.$White;
+    .content{
+      background-color: color.$Dark-mode-element;
+    }
+  }
+}

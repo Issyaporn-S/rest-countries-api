@@ -1,0 +1,29 @@
+@use "./color.scss";
+
+.country-page {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+
+  .country-detail {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.light-country-page {
+  background-color: color.$Light-mode-bg;
+
+  .country-detail {
+    color: color.$Light-mode-text;
+  }
+}
+
+.dark-country-page {
+  background-color: color.$Dark-mode-bg;
+
+  .country-detail {
+    color: color.$White;
+  }
+}

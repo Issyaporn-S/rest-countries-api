@@ -1,0 +1,48 @@
+@use './color.scss';
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    .navbar-child{
+        width: 100%;
+        height: 100%;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.mode-btn{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-light{
+    background-color: color.$White;
+    color: color.$Light-mode-text;
+    .mode-btn{
+        svg{
+            fill: color.$Light-mode-text;
+        }
+    }
+}
+
+.nav-dark{
+    background-color: color.$Dark-mode-element;
+    color: color.$White;
+    .mode-btn{
+        svg{
+            fill: color.$White;
+        }
+    }
+}
