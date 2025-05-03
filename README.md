@@ -6,6 +6,13 @@ The app includes a dark/light theme toggle and detailed country view.
 > This project is a solution to the [REST Countries API with color theme switcher challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-8f7b8a6e) on Frontend Mentor.
 
 ---
+## 🚀 Live Demo
+
+🔗 [View it on Vercel](https://rest-countries-api-psi-six.vercel.app/)
+
+📦 [View code on GitHub](https://github.com/Issyaporn-S/rest-countries-api)
+
+---
 
 ## 🔧 Tech Stack
 
@@ -28,3 +35,17 @@ The app includes a dark/light theme toggle and detailed country view.
 - 📱 Fully responsive layout
 
 ---
+## 🛠️ Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Issyaporn-S/rest-countries-api.git
+
+# Navigate into the project directory
+cd rest-countries-api
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
